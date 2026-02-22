@@ -10,12 +10,13 @@ function initMap() {
 
     map = L.map('map').setView(defaultCenter, 13);
 
-    // Add CartoDB Voyager tiles (clean look, no bus stop icons)
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 20
+        // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors',
+        maxZoom: 19
     }).addTo(map);
+
+
 
     // Load regions data
     loadRegionsData();
