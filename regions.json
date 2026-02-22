@@ -212,7 +212,7 @@
         ,
         {
             "id": "15",
-            "name": "15: Wildackers (157)",
+            "name": "15: Wildackers (257)",
             "color": "#ff80df",
             "center": {
                 "lat": 51.519225,
@@ -220,46 +220,96 @@
             },
             "streets": [
                 "Thomas van Diessenstraat (114)",
-                "Wethouder van Besouwstraat (40)",
-                "Wethouder van de Lisdonkstraat (18)",
-                "Eeckelbosstraat (36)",
-                "De Schietspoel (10)",
-                "Wilteindstraat (16)",
-                "Van Hogendorpplein (va nr 51) (23)"
+				"Wethouder van Besouwstraat (40)",
+				"Wethouder van de Lisdonkstraat (18)",
+				"Eeckelbosstraat (36)",
+				"De Schietspoel (10)",
+				"Wilteindstraat (16)",
+				"Van Hogendorpplein (23)"
             ]
         },
-        {
+		{
             "id": "16",
             "name": "16: Wildackers (235)",
-            "color": "#ff33cc",
+            "color": "#ff00bf",
             "center": {
                 "lat": 51.518259,
                 "lng": 5.064779
             },
             "streets": [
                 "Sint Jansstraat (68)",
-                "Doctor Schaepmanstraat (86)",
-                "Pater van den Elsenpad (10)",
-                "Wethouder Vekemansstraat (44)",
-                "Doctor Poelsstraat (27)"
+				"Doctor Schaepmanstraat (86)",
+				"Pater van den Elsenpad (10)",
+				"Wethouder Vekemansstraat (44)",
+				"Doctor Poelsstraat (27)"
             ]
         },
-        {
+		{
             "id": "17",
             "name": "17: Wildackers (273)",
-            "color": "#ff00bf",
+            "color": "#b30086",
             "center": {
-                "lat": 51.516386,
-                "lng": 5.058930
+                "lat": 51.517170,
+                "lng": 5.060138
             },
             "streets": [
                 "Fabriekstraat (46)",
-                "Doctor Ariënsstraat (35)",
-                "De Werft (33)",
-                "Spinnerijstraat (35)",
-                "Wildpleintje (56)",
-                "Wethouder de Brouwerstraat (37)",
-                "Hoogstraat (even tm 42, oneven tm 49) (31)"
+				"Doctor Ariënsstraat (35)",
+				"De Werft (33)",
+				"Spinnerijstraat (35)",
+				"Wildpleintje (56)",
+				"Wethouder de Brouwerstraat (37)",
+				"Hoogstraat(31)"
+            ]
+        },
+		{
+            "id": "18",
+            "name": "18: Goirle-Centrum (232)",
+            "color": "#53EAFD",
+            "center": {
+                "lat": 51.521149,
+                "lng": 5.064740
+            },
+            "streets": [
+                "Kloosterstraat (92)",
+				"Dwarsstraat (28)",
+				"Koudepad (39)",
+				"Fraterstuin (19)",
+				"Oude Kerkstraat (33)",
+				"Franciscus van Sales hof (21)"
+            ]
+        },
+		{
+            "id": "19",
+            "name": "19: Herstallen (208)",
+            "color": "#ff1a1a",
+            "center": {
+                "lat": 51.520213,
+                "lng": 5.051419
+            },
+            "streets": [
+               "Bodepad (60)",
+			   "Groot Kraaivenstraat (35)",
+			   "Ezelvenstraat (38)",
+			   "Wittendijk (36)",
+			   "Spoorbaan (39)" 
+            ]
+        },
+		{
+            "id": "20",
+            "name": "20: Herstallen (118)",
+            "color": "#b30000",
+            "center": {
+                "lat": 51.518237,
+                "lng": 5.054390
+            },
+            "streets": [
+              "Tamboerstraat (5)",
+			  "Voorheistraat (10)",
+			  "Hesselmansstraat (26)",
+			  "Aert Swaensstraat (19)",
+			  "Polderstraat (26)",
+			  "Klein Kraaivenstraat (32)"  
             ]
         }
     ]

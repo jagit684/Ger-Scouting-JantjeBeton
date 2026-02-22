@@ -10,10 +10,10 @@ function initMap() {
 
     map = L.map('map').setView(defaultCenter, 13);
 
-        // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors',
-        maxZoom: 19
+    // Add OSM France tiles (similar look to default OSM, fewer transit icons)
+    L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.openstreetmap.fr/">OSM France</a>',
+        maxZoom: 20
     }).addTo(map);
 
 
@@ -39,11 +39,7 @@ async function geocodeStreet(streetName, searchCenter, searchRadius = 0.01) {
         const searchQuery = encodeURIComponent(`${cleanStreetName}, Netherlands`);
         const url = `https://nominatim.openstreetmap.org/search?format=json&q=${searchQuery}&limit=50&polygon_geojson=1&viewbox=${searchCenter.lng-searchRadius},${searchCenter.lat+searchRadius},${searchCenter.lng+searchRadius},${searchCenter.lat-searchRadius}&bounded=1&dedupe=0`;
         
-        const response = await fetch(url, {
-            headers: {
-                'User-Agent': 'RegionMapper/1.0'
-            }
-        });
+        const response = await fetch(url);
         
         const data = await response.json();
         
@@ -187,9 +183,11 @@ function initializeMarkers() {
 
         marker.bindPopup(region.name);
         marker.on('click', () => {
-            displayRegionInfo(region.id);
-            const radio = document.querySelector(`input[name="region"][value="${region.id}"]`);
-            if (radio) radio.checked = true;
+            const cb = document.querySelector(`input[name="region"][value="${region.id}"]`);
+            if (cb) {
+                cb.checked = !cb.checked;
+                onRegionCheckboxChange();
+            }
         });
 
         layers[region.id] = { streets: [], marker };
@@ -206,45 +204,154 @@ function initializeMarkers() {
     }
 }
 
-// Populate the region radio buttons
+// Populate the region checkboxes
 function populateRegionSelect() {
-    const radioContainer = document.getElementById('regionRadios');
+    const container = document.getElementById('regionCheckboxes');
     
     regionsData.regions.forEach(region => {
         const label = document.createElement('label');
-        label.className = 'radio-label';
+        label.className = 'checkbox-label';
         
-        const radio = document.createElement('input');
-        radio.type = 'radio';
-        radio.name = 'region';
-        radio.value = region.id;
-        radio.addEventListener('change', onRegionSelectChange);
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.name = 'region';
+        checkbox.value = region.id;
+        checkbox.addEventListener('change', onRegionCheckboxChange);
         
         const span = document.createElement('span');
         span.textContent = region.name;
         
-        label.appendChild(radio);
+        label.appendChild(checkbox);
         label.appendChild(span);
-        radioContainer.appendChild(label);
-    });
-
-    // Add change listeners to the default radio buttons
-    document.querySelectorAll('input[name="region"]').forEach(radio => {
-        radio.addEventListener('change', onRegionSelectChange);
+        container.appendChild(label);
     });
 }
 
-// Handle region selection change
-function onRegionSelectChange(event) {
-    const regionId = event.target.value;
+// Handle checkbox change - display selected regions
+let loadVersion = 0;
+async function onRegionCheckboxChange() {
+    const currentVersion = ++loadVersion;
     
-    if (regionId === 'none') {
+    const checked = [...document.querySelectorAll('input[name="region"]:checked')];
+    const selectedIds = checked.map(cb => cb.value);
+    
+    if (selectedIds.length === 0) {
         clearAllStreets();
-    } else if (!regionId) {
-        displayAllRegions();
     } else {
-        displayRegionInfo(regionId);
+        await displaySelectedRegions(selectedIds, currentVersion);
     }
+}
+
+// None button: uncheck all and clear streets
+function onNoneClick() {
+    loadVersion++;
+    document.querySelectorAll('input[name="region"]').forEach(cb => cb.checked = false);
+    clearAllStreets();
+}
+
+// All button: check all and display all regions
+async function onAllClick() {
+    document.querySelectorAll('input[name="region"]').forEach(cb => cb.checked = true);
+    const currentVersion = ++loadVersion;
+    const allIds = regionsData.regions.map(r => r.id);
+    await displaySelectedRegions(allIds, currentVersion);
+}
+
+// Display only the selected regions
+async function displaySelectedRegions(regionIds, version) {
+    // Show loading cursor and block sidebar
+    document.body.classList.add('loading');
+    document.getElementById('sidebarOverlay').classList.add('active');
+
+    // Clear all existing street layers
+    Object.values(layers).forEach(layer => {
+        if (layer.streets) {
+            layer.streets.forEach(street => map.removeLayer(street));
+            layer.streets = [];
+        }
+    });
+
+    document.getElementById('regionInfo').innerHTML = '<p>Loading streets...</p>';
+
+    for (const regionId of regionIds) {
+        // Abort if a newer selection happened
+        if (version !== loadVersion) {
+            document.body.classList.remove('loading');
+            return;
+        }
+        
+        const region = regionsData.regions.find(r => r.id === regionId);
+        if (!region) continue;
+
+        const streetLayers = [];
+        const geocodedStreets = await geocodeStreetsChained(region.streets, region.center);
+        
+        for (const street of region.streets) {
+            const location = geocodedStreets[street];
+            
+            if (location) {
+                let streetLine = null;
+
+                if (location.geojson && (location.geojson.coordinates || location.geojson.geometries)) {
+                    streetLine = L.geoJSON(location.geojson, {
+                        style: {
+                            color: region.color,
+                            weight: regionIds.length === 1 ? 8 : 6,
+                            opacity: regionIds.length === 1 ? 1 : 0.8
+                        }
+                    }).addTo(map);
+                } else if (location.boundingbox) {
+                    const bbox = location.boundingbox;
+                    const center = [
+                        (parseFloat(bbox[0]) + parseFloat(bbox[1])) / 2,
+                        (parseFloat(bbox[2]) + parseFloat(bbox[3])) / 2
+                    ];
+                    
+                    streetLine = L.circleMarker(center, {
+                        radius: 5,
+                        color: region.color,
+                        fillColor: region.color,
+                        fillOpacity: 0.6,
+                        weight: 2
+                    }).addTo(map);
+                }
+
+                if (streetLine) {
+                    streetLine.bindPopup(`<strong>${street}</strong><br>${region.name}`);
+                    streetLayers.push(streetLine);
+                }
+            }
+        }
+
+        layers[regionId].streets = streetLayers;
+    }
+
+    // Fit map to show all displayed streets + markers
+    const allLayers = regionIds.flatMap(id => layers[id] ? [...layers[id].streets, layers[id].marker] : []);
+    if (allLayers.length > 0) {
+        const group = L.featureGroup(allLayers);
+        map.fitBounds(group.getBounds().pad(0.2));
+    }
+
+    // Update info panel
+    if (regionIds.length === 1) {
+        const region = regionsData.regions.find(r => r.id === regionIds[0]);
+        const streetsHtml = region.streets
+            .map(street => `<li><span class="color-indicator" style="background-color: ${region.color};"></span>${street}</li>`)
+            .join('');
+        document.getElementById('regionInfo').innerHTML = `
+            <h3>${region.name}</h3>
+            <p><strong>Color:</strong> <span class="color-indicator" style="background-color: ${region.color};"></span>${region.color}</p>
+            <p><strong>Streets (${region.streets.length}):</strong></p>
+            <ul class="street-list">${streetsHtml}</ul>
+        `;
+    } else {
+        document.getElementById('regionInfo').innerHTML = `<p>${regionIds.length} regions selected</p>`;
+    }
+
+    // Restore default cursor and unblock sidebar
+    document.body.classList.remove('loading');
+    document.getElementById('sidebarOverlay').classList.remove('active');
 }
 
 // Clear all streets but keep markers
@@ -270,183 +377,21 @@ function clearAllStreets() {
 
 // Display all regions with colors
 async function displayAllRegions() {
-    // Show loading cursor
-    document.body.classList.add('loading');
-
-    // Clear only street layers and show all markers
-    Object.values(layers).forEach(layer => {
-        if (layer.streets) {
-            layer.streets.forEach(street => map.removeLayer(street));
-            layer.streets = [];
-        }
-    });
-
-    // Show loading message
-    document.getElementById('regionInfo').innerHTML = '<p>Loading all streets on map...</p>';
-
-    // Draw streets for each region
-    for (const region of regionsData.regions) {
-        const streetLayers = [];
-
-        // Geocode streets using nearest-neighbor chaining
-        const geocodedStreets = await geocodeStreetsChained(region.streets, region.center);
-        
-        for (const street of region.streets) {
-            const location = geocodedStreets[street];
-            
-            if (location) {
-                let streetLine = null;
-
-                // If we have geometry data, draw the actual street line
-                // Handles both single geometries (.coordinates) and GeometryCollections (.geometries)
-                if (location.geojson && (location.geojson.coordinates || location.geojson.geometries)) {
-                    streetLine = L.geoJSON(location.geojson, {
-                        style: {
-                            color: region.color,
-                            weight: 6,
-                            opacity: 0.8
-                        }
-                    }).addTo(map);
-                } 
-                // Fallback: if no geometry, create a small circle at the location
-                else if (location.boundingbox) {
-                    const bbox = location.boundingbox;
-                    const center = [
-                        (parseFloat(bbox[0]) + parseFloat(bbox[1])) / 2,
-                        (parseFloat(bbox[2]) + parseFloat(bbox[3])) / 2
-                    ];
-                    
-                    streetLine = L.circleMarker(center, {
-                        radius: 5,
-                        color: region.color,
-                        fillColor: region.color,
-                        fillOpacity: 0.6,
-                        weight: 2
-                    }).addTo(map);
-                }
-
-                if (streetLine) {
-                    streetLine.bindPopup(`<strong>${street}</strong><br>${region.name}`);
-                    streetLine.on('click', () => {
-                        displayRegionInfo(region.id);
-                        const radio = document.querySelector(`input[name="region"][value="${region.id}"]`);
-                        if (radio) radio.checked = true;
-                    });
-
-                    streetLayers.push(streetLine);
-                }
-            }
-        }
-
-        layers[region.id].streets = streetLayers;
-    }
-
-    // Clear info panel
-    document.getElementById('regionInfo').innerHTML = '<p>Select a region to view details</p>';
-
-    // Fit map to show all streets
-    const allLayers = Object.values(layers).flatMap(l => [...l.streets, l.marker]);
-    if (allLayers.length > 0) {
-        const group = L.featureGroup(allLayers);
-        map.fitBounds(group.getBounds().pad(0.1));
-    }
-
-    // Restore default cursor
-    document.body.classList.remove('loading');
+    document.querySelectorAll('input[name="region"]').forEach(cb => cb.checked = true);
+    const currentVersion = ++loadVersion;
+    const allIds = regionsData.regions.map(r => r.id);
+    await displaySelectedRegions(allIds, currentVersion);
 }
 
-// Display information for a specific region
+// Display information for a specific region (called from marker click)
 async function displayRegionInfo(regionId) {
-    const region = regionsData.regions.find(r => r.id === regionId);
-    
-    if (!region) return;
-
-    // Show loading cursor
-    document.body.classList.add('loading');
-
-    // Clear streets from all regions, keep all markers visible
-    Object.entries(layers).forEach(([id, layer]) => {
-        if (layer.streets) {
-            layer.streets.forEach(street => map.removeLayer(street));
-            layer.streets = [];
-        }
-    });
-
-    // Show loading message
-    document.getElementById('regionInfo').innerHTML = '<p>Loading streets...</p>';
-
-    // Load and draw streets for selected region using chained geocoding
-    const streetLayers = [];
-    const geocodedStreets = await geocodeStreetsChained(region.streets, region.center);
-    
-    for (const street of region.streets) {
-        const location = geocodedStreets[street];
-        
-        if (location) {
-            let streetLine = null;
-
-            // If we have geometry data, draw the actual street line
-            // Handles both single geometries (.coordinates) and GeometryCollections (.geometries)
-            if (location.geojson && (location.geojson.coordinates || location.geojson.geometries)) {
-                streetLine = L.geoJSON(location.geojson, {
-                    style: {
-                        color: region.color,
-                        weight: 8,
-                        opacity: 1
-                    }
-                }).addTo(map);
-            } 
-            // Fallback: if no geometry, create a small circle at the location
-            else if (location.boundingbox) {
-                const bbox = location.boundingbox;
-                const center = [
-                    (parseFloat(bbox[0]) + parseFloat(bbox[1])) / 2,
-                    (parseFloat(bbox[2]) + parseFloat(bbox[3])) / 2
-                ];
-                
-                streetLine = L.circleMarker(center, {
-                    radius: 5,
-                    color: region.color,
-                    fillColor: region.color,
-                    fillOpacity: 0.6,
-                    weight: 2
-                }).addTo(map);
-            }
-
-            if (streetLine) {
-                streetLine.bindPopup(`<strong>${street}</strong><br>${region.name}`);
-                streetLayers.push(streetLine);
-            }
-        }
+    const cb = document.querySelector(`input[name="region"][value="${regionId}"]`);
+    if (cb && !cb.checked) {
+        cb.checked = true;
     }
-
-    // Store the street layers
-    layers[regionId].streets = streetLayers;
-
-    // Pan to region and fit bounds of its streets
-    if (streetLayers.length > 0) {
-        const group = L.featureGroup(streetLayers);
-        map.fitBounds(group.getBounds().pad(0.2));
-    } else {
-        map.setView([region.center.lat, region.center.lng], 14);
-    }
-
-    // Update info panel
-    const streetsHtml = region.streets
-        .map(street => `<li><span class="color-indicator" style="background-color: ${region.color};"></span>${street}</li>`)
-        .join('');
-
-    document.getElementById('regionInfo').innerHTML = `
-        <h3>${region.name}</h3>
-        <p><strong>Color:</strong> <span class="color-indicator" style="background-color: ${region.color};"></span>${region.color}</p>
-        <p><strong>Streets (${region.streets.length}):</strong></p>
-        <ul class="street-list">
-            ${streetsHtml}
-        </ul>
-    `;
-
-    // Restore default cursor
-    document.body.classList.remove('loading');
+    const currentVersion = ++loadVersion;
+    const selectedIds = [...document.querySelectorAll('input[name="region"]:checked')].map(c => c.value);
+    await displaySelectedRegions(selectedIds, currentVersion);
 }
 
 // Initialize map when DOM is ready

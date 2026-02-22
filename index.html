@@ -12,17 +12,14 @@
     <div class="container">
         <div class="sidebar">
             <h1>Region Mapper</h1>
+            <div id="sidebarOverlay" class="sidebar-overlay"></div>
             <div class="controls">
-                <h2>Select Region:</h2>
-                <div id="regionRadios" class="radio-group">
-                    <label class="radio-label">
-                        <input type="radio" name="region" value="none" checked>
-                        <span>-- None --</span>
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="region" value="">
-                        <span>-- All Regions --</span>
-                    </label>
+                <h2>Select Regions:</h2>
+                <div class="button-group">
+                    <button id="btnNone" class="control-btn" onclick="onNoneClick()">None</button>
+                    <button id="btnAll" class="control-btn" onclick="onAllClick()">All</button>
+                </div>
+                <div id="regionCheckboxes" class="checkbox-group">
                 </div>
             </div>
             <div id="regionInfo" class="region-info"></div>
