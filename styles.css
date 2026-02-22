@@ -39,6 +39,11 @@ body {
     display: block;
 }
 
+/* Prevent sidebar scrolling while overlay is active */
+.sidebar:has(.sidebar-overlay.active) {
+    overflow: hidden;
+}
+
 .sidebar h1 {
     font-size: 24px;
     color: #1f2937;

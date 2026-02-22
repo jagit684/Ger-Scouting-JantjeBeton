@@ -100,7 +100,7 @@ async function geocodeStreetsChained(streets, regionCenter) {
     const results = {}; // streetName -> location
     const remaining = [...streets];
     
-    const searchRadius = 0.0036; // ~400m around the marker
+    const searchRadius = 0.0045; // ~500m around the marker
     
     let maxPasses = 3; // try multiple passes with expanding radius from marker
     
@@ -125,7 +125,7 @@ async function geocodeStreetsChained(streets, regionCenter) {
                 );
                 
                 // Accept if within reasonable distance from marker (scales with pass)
-                if (distFromMarker <= 0.4 * (pass + 1)) {
+                if (distFromMarker <= 0.5 * (pass + 1)) {
                     results[street] = location;
                     found = true;
                 }
