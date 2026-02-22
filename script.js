@@ -269,6 +269,10 @@ function clearAllStreets() {
 
 // Display all regions with colors
 async function displayAllRegions() {
+    // Show loading cursor
+    document.body.style.cursor = 'wait';
+    document.getElementById('map').style.cursor = 'wait';
+
     // Clear only street layers and show all markers
     Object.values(layers).forEach(layer => {
         if (layer.streets) {
@@ -346,6 +350,10 @@ async function displayAllRegions() {
         const group = L.featureGroup(allLayers);
         map.fitBounds(group.getBounds().pad(0.1));
     }
+
+    // Restore default cursor
+    document.body.style.cursor = 'default';
+    document.getElementById('map').style.cursor = '';
 }
 
 // Display information for a specific region
@@ -353,6 +361,10 @@ async function displayRegionInfo(regionId) {
     const region = regionsData.regions.find(r => r.id === regionId);
     
     if (!region) return;
+
+    // Show loading cursor
+    document.body.style.cursor = 'wait';
+    document.getElementById('map').style.cursor = 'wait';
 
     // Clear streets from all regions, keep all markers visible
     Object.entries(layers).forEach(([id, layer]) => {
@@ -434,6 +446,10 @@ async function displayRegionInfo(regionId) {
             ${streetsHtml}
         </ul>
     `;
+
+    // Restore default cursor
+    document.body.style.cursor = 'default';
+    document.getElementById('map').style.cursor = '';
 }
 
 // Initialize map when DOM is ready
