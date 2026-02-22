@@ -208,8 +208,7 @@
                 "Burgemeester Philipsenstraat (61)",
                 "Burgemeester van Gorpstraat (20)"
             ]
-        }
-        ,
+        },
         {
             "id": "15",
             "name": "15: Wildackers (257)",
@@ -220,15 +219,15 @@
             },
             "streets": [
                 "Thomas van Diessenstraat (114)",
-				"Wethouder van Besouwstraat (40)",
-				"Wethouder van de Lisdonkstraat (18)",
-				"Eeckelbosstraat (36)",
-				"De Schietspoel (10)",
-				"Wilteindstraat (16)",
-				"Van Hogendorpplein (23)"
+                "Wethouder van Besouwstraat (40)",
+                "Wethouder van de Lisdonkstraat (18)",
+                "Eeckelbosstraat (36)",
+                "De Schietspoel (10)",
+                "Wilteindstraat (16)",
+                "Van Hogendorpplein (23)"
             ]
         },
-		{
+        {
             "id": "16",
             "name": "16: Wildackers (235)",
             "color": "#ff00bf",
@@ -238,13 +237,13 @@
             },
             "streets": [
                 "Sint Jansstraat (68)",
-				"Doctor Schaepmanstraat (86)",
-				"Pater van den Elsenpad (10)",
-				"Wethouder Vekemansstraat (44)",
-				"Doctor Poelsstraat (27)"
+                "Doctor Schaepmanstraat (86)",
+                "Pater van den Elsenpad (10)",
+                "Wethouder Vekemansstraat (44)",
+                "Doctor Poelsstraat (27)"
             ]
         },
-		{
+        {
             "id": "17",
             "name": "17: Wildackers (273)",
             "color": "#b30086",
@@ -254,15 +253,15 @@
             },
             "streets": [
                 "Fabriekstraat (46)",
-				"Doctor Ariënsstraat (35)",
-				"De Werft (33)",
-				"Spinnerijstraat (35)",
-				"Wildpleintje (56)",
-				"Wethouder de Brouwerstraat (37)",
-				"Hoogstraat(31)"
+                "Doctor Ariënsstraat (35)",
+                "De Werft (33)",
+                "Spinnerijstraat (35)",
+                "Wildpleintje (56)",
+                "Wethouder de Brouwerstraat (37)",
+                "Hoogstraat(31)"
             ]
         },
-		{
+        {
             "id": "18",
             "name": "18: Goirle-Centrum (232)",
             "color": "#53EAFD",
@@ -272,14 +271,14 @@
             },
             "streets": [
                 "Kloosterstraat (92)",
-				"Dwarsstraat (28)",
-				"Koudepad (39)",
-				"Fraterstuin (19)",
-				"Oude Kerkstraat (33)",
-				"Franciscus van Sales hof (21)"
+                "Dwarsstraat (28)",
+                "Koudepad (39)",
+                "Fraterstuin (19)",
+                "Oude Kerkstraat (33)",
+                "Franciscus van Sales hof (21)"
             ]
         },
-		{
+        {
             "id": "19",
             "name": "19: Herstallen (208)",
             "color": "#ff1a1a",
@@ -288,28 +287,91 @@
                 "lng": 5.051419
             },
             "streets": [
-               "Bodepad (60)",
-			   "Groot Kraaivenstraat (35)",
-			   "Ezelvenstraat (38)",
-			   "Wittendijk (36)",
-			   "Spoorbaan (39)" 
+                "Bodepad (60)",
+                "Groot Kraaivenstraat (35)",
+                "Ezelvenstraat (38)",
+                "Wittendijk (36)",
+                "Spoorbaan (39)"
             ]
         },
-		{
+        {
             "id": "20",
-            "name": "20: Herstallen (118)",
+            "name": "20: Herstallen (128)",
             "color": "#b30000",
             "center": {
                 "lat": 51.518237,
                 "lng": 5.054390
             },
             "streets": [
-              "Tamboerstraat (5)",
-			  "Voorheistraat (10)",
-			  "Hesselmansstraat (26)",
-			  "Aert Swaensstraat (19)",
-			  "Polderstraat (26)",
-			  "Klein Kraaivenstraat (32)"  
+                "Tamboerstraat (5)",
+                "Voorheistraat (10)",
+                "Hesselmansstraat (26)",
+                "Aert Swaensstraat (19)",
+                "Polderstraat (26)",
+                "Klein Kraaivenstraat (32)",
+                "Gildestraat (10)"
+            ]
+        },
+        {
+            "id": "51",
+            "name": "51: Herstallen (75)",
+            "color": "#99ff99",
+            "center": {
+                "lat": 51.523117,
+                "lng": 5.057074
+            },
+            "streets": [
+                "Nieuwe Rielseweg (48)",
+                "Kuileven (9)",
+                "Den Ouden Heertgang (7)",
+                "Vlieshoekstraat (4)",
+                "Bosstraat (7)"
+            ]
+        },
+        {
+            "id": "52",
+            "name": "52: Geestelijken (109)",
+            "color": "#00ff00",
+            "center": {
+                "lat": 51.522027,
+                "lng": 5.056271
+            },
+            "streets": [
+                "Herstallenstraat (19)",
+                "Pastoor Petershofje (14)",
+                "Pastoor van Rielstraat (25)",
+                "Pastoor van Dunstraat (25)",
+                "Pastoor de Beeckstraat (26)"
+            ]
+        },
+        {
+            "id": "53",
+            "name": "53: Geestelijken (80)",
+            "color": "#00b300",
+            "center": {
+                "lat": 51.520342,
+                "lng": 5.055734
+            },
+            "streets": [
+                "Van Hoogendorpplein (50)",
+                "Pastoor Sprangersstraat (28)",
+                "Doelenstraat (24)"
+            ]
+        },
+        {
+            "id": "54",
+            "name": "54: Geestelijken (124)",
+            "color": "#009900",
+            "center": {
+                "lat": 51.521502,
+                "lng": 5.054192
+            },
+            "streets": [
+                "Wittendijk (24)",
+                "Kapelaan Denissenstraat (25)",
+                "Sint Jorisstraat (26)",
+                "Pastoor de Vochtstraat (25)",
+                "Pastoor Minorettistraat (24)"
             ]
         }
     ]
