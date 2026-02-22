@@ -140,7 +140,7 @@
             "name": "09: Bergstraat (109)",
             "color": "#DAA520",
             "center": {
-                "lat": 51.516589, 
+                "lat": 51.516589,
                 "lng": 5.063187
             },
             "streets": [
@@ -302,6 +302,143 @@
                 "Polderstraat (26)",
                 "Klein Kraaivenstraat (32)",
                 "Gildestraat (10)"
+            ]
+        },
+        {
+            "id": "22",
+            "name": "22: Bomen (242)",
+            "color": "#87CEFA",
+            "center": {
+                "lat": 51.523804,
+                "lng": 5.052716
+            },
+            "streets": [
+                "Elzengaard (56)",
+                "Beukengaard (58)",
+                "Lindengaard (22)",
+                "Platanengaard (23)",
+                "Sint Jacobsbaan (47)",
+                "Notengaard (13)",
+                "Wilgengaard (15)",
+                "Kastanjegaard (8)"
+            ]
+        },
+        {
+            "id": "23",
+            "name": "23: Rivieren (205)",
+            "color": "#1E90FF",
+            "center": {
+                "lat": 51.524952,
+                "lng": 5.043157
+            },
+            "streets": [
+                "Acacialaan (49)",
+                "De Hilver (67)",
+                "Oude Maasje (6)",
+                "De Wouwer (8)",
+                "De Dommel (75)"
+            ]
+        },
+        {
+            "id": "24",
+            "name": "24: Bomen (206)",
+            "color": "#00FFFF",
+            "center": {
+                "lat": 51.524431,
+                "lng": 5.048480
+            },
+            "streets": [
+                "Esdoorngaard (34)",
+                "Peppelgaard (48)",
+                "Espengaard (11)",
+                "Olmengaard (7)",
+                "Hellenweg (32)",
+                "Iepengaard (39)",
+                "Hazelaarpark (25)",
+                "Lijsterbeshof (10)"
+            ]
+        },
+        {
+            "id": "25",
+            "name": "25: Rivieren (212)",
+            "color": "#FFD700",
+            "center": {
+                "lat": 51.526668,
+                "lng": 5.043503
+            },
+            "streets": [
+                "De Zoom (13)",
+                "De Aa (13)",
+                "De Run (5)",
+                "De Wetering (10)",
+                "De Tongelreep (24)",
+                "De Dieze (39)",
+                "De Donge (30)",
+                "De Dintel (20)",
+                "De Mark (58)"
+            ]
+        },
+        {
+            "id": "26",
+            "name": "26: Baronielaan e.o. (220)",
+            "color": "#FFFF00",
+            "center": {
+                "lat": 51.528837,
+                "lng": 5.047281
+            },
+            "streets": [
+                "Baronielaan (115)",
+                "Ganzeven (17)",
+                "Den Brem (88)"
+            ]
+        },
+        {
+            "id": "27",
+            "name": "27: Kruiden (170)",
+            "color": "#FAFAD2",
+            "center": {
+                "lat": 51.527836,
+                "lng": 5.048130
+            },
+            "streets": [
+                "Zonnedauw (29)",
+                "Akkerwinde (53)",
+                "Weegbree (24)",
+                "Valeriaan (32)",
+                "Steltacker (17)",
+                "De Dieze (15)"
+            ]
+        },
+        {
+            "id": "28",
+            "name": "28: Frankische Driekhoek e.o. (253)",
+            "color": "#ffc34d",
+            "center": {
+                "lat": 51.527059,
+                "lng": 5.051279
+            },
+            "streets": [
+                "Gagel(67)",
+                "Baarsven (29)",
+                "Wit Hollandven (80)",
+                "Halve Maan (17)",
+                "Frankische Driehoek (60)"
+            ]
+        },
+        {
+            "id": "43",
+            "name": "43: Abcoven (139)",
+            "color": "#D2691E",
+            "center": {
+                "lat": 51.519225,
+                "lng": 5.054390
+            },
+            "streets": [
+                "Kokos",
+                "Keper",
+                "Jute",
+                "Hoogen Dries",
+                "Saelde"
             ]
         },
         {
