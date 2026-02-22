@@ -64,7 +64,8 @@
                 "Tweepad (20)",
                 "Pater Pirestraat (51)"
             ]
-        },{
+        },
+        {
             "id": "05",
             "name": "05: Abcoven (307)",
             "color": "#800080",
@@ -82,14 +83,13 @@
                 "Maasbogt (14)",
                 "Leijzoom (33)"
             ]
-
         },
         {
             "id": "06",
             "name": "06: Abcoven (356)",
             "color": "#9932CC",
             "center": {
-                "lat": 51.522243, 
+                "lat": 51.522243,
                 "lng": 5.071901
             },
             "streets": [
@@ -100,14 +100,13 @@
                 "Emmastraat (44)",
                 "Aabeekstraat (64)"
             ]
-
         },
         {
             "id": "07",
             "name": "07: Abcoven (193)",
             "color": "#0000FF",
             "center": {
-                "lat":51.524286, 
+                "lat": 51.524286,
                 "lng": 5.073477
             },
             "streets": [
@@ -208,6 +207,40 @@
                 "Burgemeester Voskensstraat (18)",
                 "Burgemeester Philipsenstraat (61)",
                 "Burgemeester van Gorpstraat (20)"
+            ]
+        },
+        {
+            "id": "15",
+            "name": "15: Wildackers (157)",
+            "color": "#FF1493",
+            "center": {
+                "lat": 51.519225,
+                "lng": 5.060297
+            },
+            "streets": [
+                "Thomas van Diessenstraat (114)",
+                "Wethouder van Besouwstraat (40)",
+                "Wethouder van de Lisdonkstraat (18)",
+                "Eeckelbosstraat (36)",
+                "De Schietspoel (10)",
+                "Wilteindstraat (16)",
+                "Van Hogendorpplein (va nr 51) (23)"
+            ]
+        },
+        {
+            "id": "16",
+            "name": "16: Wildackers (235)",
+            "color": "#FF1495",
+            "center": {
+                "lat": 51.518259,
+                "lng": 5.064779
+            },
+            "streets": [
+                "Sint Jansstraat (68)",
+                "Doctor Schaepmanstraat (86)",
+                "Pater van den Elsenpad (10)",
+                "Wethouder Vekemansstraat (44)",
+                "Doctor Poelsstraat (27)"
             ]
         }
     ]
