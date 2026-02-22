@@ -1,0 +1,214 @@
+{
+    "regions": [
+        {
+            "id": "01",
+            "name": "1: Grobbendonck (183)",
+            "color": "#FFA500",
+            "center": {
+                "lat": 51.526438,
+                "lng": 5.071669
+            },
+            "streets": [
+                "Martin Luther Kinglaan (106)",
+                "Costerman Boodtstraat (77)"
+            ]
+        },
+        {
+            "id": "02",
+            "name": "2: Grobbendonck (183)",
+            "color": "#FF4500",
+            "center": {
+                "lat": 51.528622,
+                "lng": 5.072042
+            },
+            "streets": [
+                "Zevenkwartieren (20)",
+                "Robert Baeldestraat (32)",
+                "Van Limburg Stirumstraat (19)",
+                "Christoffel Bennekersstraat (12)",
+                "Willem Ruysstraat (48)",
+                "Bijlakkers (20)"
+            ]
+        },
+        {
+            "id": "03",
+            "name": "3: Grobbendonck (175)",
+            "color": "#FEFF6B",
+            "center": {
+                "lat": 51.527539,
+                "lng": 5.068263
+            },
+            "streets": [
+                "Kennedylaan (88)",
+                "Zwartland (12)",
+                "Benedenven (9)",
+                "Schimmelpenninck van der Oijestraat (4)",
+                "Meerakkers (9)",
+                "Biesakkers (8)",
+                "Grobbendonckpark (45)"
+            ]
+        },
+        {
+            "id": "04",
+            "name": "04: Grobbendonck (211)",
+            "color": "#DC143C",
+            "center": {
+                "lat": 51.525891,
+                "lng": 5.067419
+            },
+            "streets": [
+                "Schets van Grobbendoncklaan (19)",
+                "Ralph Bunchestraat (34)",
+                "Henri Dunantstraat (31)",
+                "Tobias Asserstraat (56)",
+                "Tweepad (20)",
+                "Pater Pirestraat (51)"
+            ]
+        },{
+            "id": "05",
+            "name": "05: Abcoven (307)",
+            "color": "#800080",
+            "center": {
+                "lat": 51.526362,
+                "lng": 5.080753
+            },
+            "streets": [
+                "Abcovenseweg (128)",
+                "Caddenbosch (20)",
+                "Bogtpad (7)",
+                "Melkweg (78)",
+                "Hoeffweg (8)",
+                "Kerkakkers (19)",
+                "Maasbogt (14)",
+                "Leijzoom (33)"
+            ]
+
+        },
+        {
+            "id": "06",
+            "name": "06: Abcoven (356)",
+            "color": "#9932CC",
+            "center": {
+                "lat": 51.522243, 
+                "lng": 5.071901
+            },
+            "streets": [
+                "Muldersweg (44)",
+                "Groeneweg (76)",
+                "Kalverstraat (103)",
+                "De Wieken (25)",
+                "Emmastraat (44)",
+                "Aabeekstraat (64)"
+            ]
+
+        },
+        {
+            "id": "07",
+            "name": "07: Abcoven (193)",
+            "color": "#0000FF",
+            "center": {
+                "lat":51.524286, 
+                "lng": 5.073477
+            },
+            "streets": [
+                "Tilburgseweg (141)",
+                "Van Haestrechtstraat (87)",
+                "Kortevoorenstraat (19)",
+                "Langevoorenstraat (18)",
+                "Oranjeplein (100)",
+                "Marijkestraat (30)",
+                "Irenestraat (24)",
+                "Beatrixstraat (25)",
+                "Margrietstraat (33)"
+            ]
+        },
+        {
+            "id": "08",
+            "name": "08: Abcoven (160)",
+            "color": "#00CED1",
+            "center": {
+                "lat": 51.520767,
+                "lng": 5.072497
+            },
+            "streets": [
+                "Molenstraat (123)",
+                "Aansteede (9)",
+                "Korenmolenplein (28)"
+            ]
+        },
+        {
+            "id": "09",
+            "name": "09: 't Ven (205)",
+            "color": "#008B8B",
+            "center": {
+                "lat": 51.527103,
+                "lng": 5.060513
+            },
+            "streets": [
+                "Venneweg (44)",
+                "Vennerode (11)",
+                "Papenlantstraat (34)",
+                "Klaphekkestraat (31)",
+                "De Ripsstraat (19)",
+                "De Krommertstraat (6)",
+                "Wethouder Tra Plein (26)",
+                "Dirckslantstraat (17)",
+                "Langenboomstraat (17)"
+            ]
+        },
+        {
+            "id": "10",
+            "name": "10: 't Ven (205)",
+            "color": "#1A535C",
+            "center": {
+                "lat": 51.527103,
+                "lng": 5.060513
+            },
+            "streets": [
+                "Venneweg (44)",
+                "Vennerode (11)",
+                "Papenlantstraat (34)",
+                "Klaphekkestraat (31)",
+                "De Ripsstraat (19)",
+                "De Krommertstraat (6)",
+                "Wethouder Tra Plein (26)",
+                "Dirckslantstraat (17)",
+                "Langenboomstraat (17)"
+            ]
+        },
+        {
+            "id": "11",
+            "name": "11: 't Ven (107)",
+            "color": "#4ECDC4",
+            "center": {
+                "lat": 51.527582,
+                "lng": 5.054988
+            },
+            "streets": [
+                "Rietven (12)",
+                "Kruisbaan (32)",
+                "Wermenbossestraat (42)",
+                "Mortelstraat (1)",
+                "Mortelpleintje(4)",
+                "Papenweg (6)",
+                "Kromakkerstraat (8)"
+            ]
+        },
+        {
+            "id": "12",
+            "name": "12: Burgemeesters (194)",
+            "color": "#FF6B6B",
+            "center": {
+                "lat": 51.525101,
+                "lng": 5.059042
+            },
+            "streets": [
+                "Van Malsenstraat (83)",
+                "Burgemeester van Gorpstraat (20)",
+                "Burgemeester Voskensstraat (18)",
+                "Burgemeester Philipsenstraat (61)",
+                "Burgemeester van Gorpstraat (20)"
+            ]
+        }
+    ]
+}
