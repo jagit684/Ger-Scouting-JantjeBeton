@@ -208,11 +208,12 @@
                 "Burgemeester Philipsenstraat (61)",
                 "Burgemeester van Gorpstraat (20)"
             ]
-        },
+        }
+        ,
         {
             "id": "15",
             "name": "15: Wildackers (157)",
-            "color": "#FF1493",
+            "color": "#ff80df",
             "center": {
                 "lat": 51.519225,
                 "lng": 5.060297
@@ -230,7 +231,7 @@
         {
             "id": "16",
             "name": "16: Wildackers (235)",
-            "color": "#FF1495",
+            "color": "#ff33cc",
             "center": {
                 "lat": 51.518259,
                 "lng": 5.064779
@@ -241,6 +242,24 @@
                 "Pater van den Elsenpad (10)",
                 "Wethouder Vekemansstraat (44)",
                 "Doctor Poelsstraat (27)"
+            ]
+        },
+        {
+            "id": "17",
+            "name": "17: Wildackers (273)",
+            "color": "#ff00bf",
+            "center": {
+                "lat": 51.516386,
+                "lng": 5.058930
+            },
+            "streets": [
+                "Fabriekstraat (46)",
+                "Doctor Ariënsstraat (35)",
+                "De Werft (33)",
+                "Spinnerijstraat (35)",
+                "Wildpleintje (56)",
+                "Wethouder de Brouwerstraat (37)",
+                "Hoogstraat (even tm 42, oneven tm 49) (31)"
             ]
         }
     ]
