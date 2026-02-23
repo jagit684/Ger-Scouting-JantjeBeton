@@ -103,7 +103,7 @@
         },
         {
             "id": "07",
-            "name": "07: Abcoven (193)",
+            "name": "07: Oranjebuurt (193)",
             "color": "#B22222",
             "center": {
                 "lat": 51.524286,
@@ -187,8 +187,8 @@
             ]
         },
         {
-            "id": "12a",
-            "name": "12a: Burgemeesters (121)",
+            "id": "12",
+            "name": "12: Burgemeesters (121)",
             "color": "#FF6B6B",
             "center": {
                 "lat": 51.525101,
@@ -201,11 +201,11 @@
             ]
         },
         {
-            "id": "12b",
-            "name": "12b: Burgemeesters (171)",
+            "id": "21",
+            "name": "21: Burgemeesters (171)",
             "color": "#FFA07A",
             "center": {
-                "lat": 51.523844, 
+                "lat": 51.523844,
                 "lng": 5.062452
             },
             "streets": [
@@ -232,7 +232,7 @@
             "name": "14: Wildackers (163)",
             "color": "#FF6B6B",
             "center": {
-                "lat": 51.520846, 
+                "lat": 51.520846,
                 "lng": 5.060231
             },
             "streets": [
@@ -597,6 +597,35 @@
             ]
         },
         {
+            "id": "38",
+            "name": "38: De Hoogte (191)",
+            "color": "#80ffff",
+            "center": {
+                "lat": 51.528933,
+                "lng": 5.083668
+            },
+            "streets": [
+                "De Volmolen (112)",
+                "Hoge Wal (55)",
+                "Heeshoek (10)",
+                "Wagenvoort (14)"
+            ]
+        },
+        {
+            "id": "39",
+            "name": "39: De Hoogte (161)",
+            "color": "#AFEEEE",
+            "center": {
+                "lat": 51.531902,
+                "lng": 5.088365
+            },
+            "streets": [
+                "Voldijkje (54)",
+                "Hoge Wal (tot nrs 65 en 110) (55)",
+                "Hoogt (52)"
+            ]
+        },
+        {
             "id": "43",
             "name": "43: Kerkhofbuurt (169)",
             "color": "#F4A460",
@@ -666,7 +695,7 @@
         },
         {
             "id": "52",
-            "name": "52: Geestelijken (109)",
+            "name": "52: Pastoren (109)",
             "color": "#00ff00",
             "center": {
                 "lat": 51.522027,
@@ -682,7 +711,7 @@
         },
         {
             "id": "53",
-            "name": "53: Geestelijken (80)",
+            "name": "53: Pastoren (80)",
             "color": "#00b300",
             "center": {
                 "lat": 51.520342,
