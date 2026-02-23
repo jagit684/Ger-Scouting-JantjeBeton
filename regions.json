@@ -229,20 +229,17 @@
         },
         {
             "id": "14",
-            "name": "14: Wildackers (257)",
-            "color": "#ffb3ff",
+            "name": "14: Wildackers (163)",
+            "color": "#FF6B6B",
             "center": {
-                "lat": 51.51914502547419,
-                "lng": 5.06220243006663
+                "lat": 51.520846, 
+                "lng": 5.060231
             },
             "streets": [
-                "Thomas van Diessenstraat (114)",
-                "Wethouder van Besouwstraat (40)",
-                "Wethouder van de Lisdonkstraat (18)",
-                "Eeckelbosstraat (36)",
-                "De Schietspoel (10)",
-                "Wilteindstraat (16)",
-                "Van Hogendorpplein (23)"
+                "Hoogstraat (67)",
+                "Reitstraat (36)",
+                "Scheerdershofje (29)",
+                "Stedekestraat (31)"
             ]
         },
         {
