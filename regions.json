@@ -626,6 +626,64 @@
             ]
         },
         {
+            "id": "40",
+            "name": "40: De Boschkens-Oost (127)",
+            "color": "#8B4513",
+            "center": {
+                "lat": 51.532562, 
+                "lng": 5.071066
+            },
+            "streets": [
+                "Spieker (17)",
+                "Waterput (28)",
+                "Bronstijd (4)",
+                "IJzertijd (8)",
+                "Romeinse Tijd (8)",
+                "Middeleeuwen (36)",
+                "Slijpsteen (3)",
+                "Kooksteen (3)",
+                "Vuursteen (3)",
+                "Maalsteen (20)",
+                "Zandsteen (3)"
+            ]
+        },
+        {
+            "id": "41",
+            "name": "41: Boschkamer (249)",
+            "color": "#4ECDC4",
+            "center": {
+                "lat": 51.536599, 
+                "lng": 5.058883
+            },
+            "streets": [
+                "De Boschkamer (23)",
+                "Dagpauwoog (12)",
+                "Zandhagedis (11)",
+                "Boschring (104)",
+                "Muurhagedis (32)",
+                "Oeverzwaluw  (32)",
+                "Kamsalamander (35)"
+            ]
+        },
+        {
+            "id": "42",
+            "name": "42: Surfplas (253)",
+            "color": "#1A535C",
+            "center": {
+                "lat": 51.530526, 
+                "lng": 5.054190
+            },
+            "streets": [
+                "Roerdomp (26)",
+                "Boschring (104)",
+                "Vuurvlinder (17)",
+                "Boschrand (39)",
+                "IJsvogel (6)",
+                "Oeverzwaluw (15)",
+                "Watersalamander (24)"
+            ]
+        },
+        {
             "id": "43",
             "name": "43: Kerkhofbuurt (169)",
             "color": "#F4A460",
@@ -677,6 +735,21 @@
                 "De Vloed"
             ]
         },
+        {"id": "46",
+            "name": "46: Mill Hill (91)",
+            "color": "#D2691E",
+            "center": {
+                "lat": 51.529654, 
+                "lng": 5.057567
+            },
+            "streets": [
+                "Buizerd (18)",
+                "Koolmees (15)",
+                "Hertenwei (17)",
+                "Oude Baan (9)",
+                "RillaerseBaan (32)"
+            ]
+        },
         {
             "id": "51",
             "name": "51: Herstallen (75)",
@@ -725,7 +798,7 @@
         },
         {
             "id": "54",
-            "name": "54: Geestelijken (124)",
+            "name": "54: Pastoren (124)",
             "color": "#446600",
             "center": {
                 "lat": 51.521502,

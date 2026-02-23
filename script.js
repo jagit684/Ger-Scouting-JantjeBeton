@@ -45,11 +45,12 @@ async function geocodeStreet(streetName, searchCenter, searchRadius = 0.01) {
         
         if (data && data.length > 0) {
             // Collect all geometries into a GeometryCollection
+            // Filter out Point geometries (bus stops, etc.) — we only want street lines
             const geometries = [];
             let sumLat = 0, sumLng = 0, count = 0;
 
             for (const item of data) {
-                if (item.geojson) {
+                if (item.geojson && item.geojson.type !== 'Point') {
                     geometries.push(item.geojson);
                 }
                 sumLat += parseFloat(item.lat);
@@ -325,13 +326,6 @@ async function displaySelectedRegions(regionIds, version) {
         layers[regionId].streets = streetLayers;
     }
 
-    // Fit map to show all displayed streets + markers
-    const allLayers = regionIds.flatMap(id => layers[id] ? [...layers[id].streets, layers[id].marker] : []);
-    if (allLayers.length > 0) {
-        const group = L.featureGroup(allLayers);
-        map.fitBounds(group.getBounds().pad(0.2));
-    }
-
     // Update info panel
     if (regionIds.length === 1) {
         const region = regionsData.regions.find(r => r.id === regionIds[0]);
@@ -364,13 +358,6 @@ function clearAllStreets() {
 
     // Clear info panel
     document.getElementById('regionInfo').innerHTML = '<p>Select a region to view details</p>';
-
-    // Fit map to show all markers
-    const markers = Object.values(layers).map(l => l.marker).filter(Boolean);
-    if (markers.length > 0) {
-        const group = L.featureGroup(markers);
-        map.fitBounds(group.getBounds().pad(0.2));
-    }
 }
 
 // Display all regions with colors
