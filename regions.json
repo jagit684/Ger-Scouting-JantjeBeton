@@ -138,7 +138,7 @@
         {
             "id": "09",
             "name": "09: Bergstraat (109)",
-            "color": "#DAA520",
+            "color": "#00CED1",
             "center": {
                 "lat": 51.516589,
                 "lng": 5.063187
@@ -598,7 +598,7 @@
         },
         {
             "id": "43",
-            "name": "43: Abcoven (169)",
+            "name": "43: Kerkhofbuurt (169)",
             "color": "#F4A460",
             "center": {
                 "lat": 51.519174,
@@ -612,7 +612,7 @@
         },
         {
             "id": "44",
-            "name": "44: Abcoven (139)",
+            "name": "44: TextielFabriek Besouw (139)",
             "color": "#D2691E",
             "center": {
                 "lat": 51.519507,

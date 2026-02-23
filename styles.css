@@ -24,26 +24,6 @@ body {
     position: relative;
 }
 
-.sidebar-overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 200;
-}
-
-.sidebar-overlay.active {
-    display: block;
-}
-
-/* Prevent sidebar scrolling while overlay is active */
-.sidebar:has(.sidebar-overlay.active) {
-    overflow: hidden;
-}
-
 .sidebar h1 {
     font-size: 24px;
     color: #1f2937;

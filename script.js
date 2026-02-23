@@ -261,7 +261,6 @@ async function onAllClick() {
 async function displaySelectedRegions(regionIds, version) {
     // Show loading cursor and block sidebar
     document.body.classList.add('loading');
-    document.getElementById('sidebarOverlay').classList.add('active');
 
     // Clear all existing street layers
     Object.values(layers).forEach(layer => {
@@ -351,7 +350,6 @@ async function displaySelectedRegions(regionIds, version) {
 
     // Restore default cursor and unblock sidebar
     document.body.classList.remove('loading');
-    document.getElementById('sidebarOverlay').classList.remove('active');
 }
 
 // Clear all streets but keep markers
