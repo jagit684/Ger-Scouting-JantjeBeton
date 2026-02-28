@@ -67,14 +67,13 @@
         },
         {
             "id": "05",
-            "name": "05: Abcoven (307)",
+            "name": "05: Abcoven (179)",
             "color": "#800080",
             "center": {
                 "lat": 51.526362,
                 "lng": 5.080753
             },
             "streets": [
-                "Abcovenseweg (128)",
                 "Caddenbosch (20)",
                 "Bogtpad (7)",
                 "Melkweg (78)",
@@ -87,7 +86,7 @@
         {
             "id": "06",
             "name": "06: Abcoven (356)",
-            "color": "#9932CC",
+            "color": "#aa11ff",
             "center": {
                 "lat": 51.522243,
                 "lng": 5.071901
@@ -104,7 +103,7 @@
         {
             "id": "07",
             "name": "07: Oranjebuurt (193)",
-            "color": "#B22222",
+            "color": "#ef00ff",
             "center": {
                 "lat": 51.524286,
                 "lng": 5.073477
@@ -124,7 +123,7 @@
         {
             "id": "08",
             "name": "08: Abcoven (160)",
-            "color": "#00CED1",
+            "color": "#0000FF",
             "center": {
                 "lat": 51.520767,
                 "lng": 5.072497
@@ -133,6 +132,19 @@
                 "Molenstraat (123)",
                 "Aansteede (9)",
                 "Korenmolenplein (28)"
+            ]
+        },
+        {
+            "id": "13",
+            "name": "13: Dorpsstraat (177)",
+            "color": "#FF0000",
+            "center": {
+                "lat": 51.525754,
+                "lng": 5.064173
+            },
+            "streets": [
+                "Tilburgseweg (86)",
+                "Dorpsstraat (91)"
             ]
         },
         {
@@ -215,19 +227,6 @@
             ]
         },
         {
-            "id": "13",
-            "name": "13: Dorpsstraat (177)",
-            "color": "#FF0000",
-            "center": {
-                "lat": 51.525754,
-                "lng": 5.064173
-            },
-            "streets": [
-                "Tilburgseweg (86)",
-                "Dorpsstraat (91)"
-            ]
-        },
-        {
             "id": "14",
             "name": "14: Wildackers (163)",
             "color": "#FF6B6B",
@@ -244,14 +243,13 @@
         },
         {
             "id": "15",
-            "name": "15: Wildackers (257)",
-            "color": "#ff80df",
+            "name": "15: Wildackers (143)",
+            "color": "#00CED1",
             "center": {
                 "lat": 51.51914502547419,
                 "lng": 5.06220243006663
             },
             "streets": [
-                "Thomas van Diessenstraat (114)",
                 "Wethouder van Besouwstraat (40)",
                 "Wethouder van de Lisdonkstraat (18)",
                 "Eeckelbosstraat (36)",
@@ -296,7 +294,7 @@
         },
         {
             "id": "18",
-            "name": "18: Goirle-Centrum (232)",
+            "name": "18: Goirle-Centrum (346)",
             "color": "#53EAFD",
             "center": {
                 "lat": 51.521149,
@@ -308,7 +306,8 @@
                 "Koudepad (39)",
                 "Fraterstuin (19)",
                 "Oude Kerkstraat (33)",
-                "Franciscus van Sales hof (21)"
+                "Franciscus van Sales hof (21)",
+                "Thomas van Diessenstraat (114)"
             ]
         },
         {
@@ -630,7 +629,7 @@
             "name": "40: De Boschkens-Oost (127)",
             "color": "#8B4513",
             "center": {
-                "lat": 51.532562, 
+                "lat": 51.532562,
                 "lng": 5.071066
             },
             "streets": [
@@ -652,7 +651,7 @@
             "name": "41: Boschkamer (249)",
             "color": "#4ECDC4",
             "center": {
-                "lat": 51.536599, 
+                "lat": 51.536599,
                 "lng": 5.058883
             },
             "streets": [
@@ -670,7 +669,7 @@
             "name": "42: Surfplas (253)",
             "color": "#1A535C",
             "center": {
-                "lat": 51.530526, 
+                "lat": 51.530526,
                 "lng": 5.054190
             },
             "streets": [
@@ -735,11 +734,12 @@
                 "De Vloed"
             ]
         },
-        {"id": "46",
+        {
+            "id": "46",
             "name": "46: Mill Hill (91)",
             "color": "#D2691E",
             "center": {
-                "lat": 51.529654, 
+                "lat": 51.529654,
                 "lng": 5.057567
             },
             "streets": [
