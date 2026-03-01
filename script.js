@@ -33,7 +33,8 @@ async function geocodeStreet(streetName, searchCenter, searchRadius = 0.01) {
     
     const cacheKey = `${cleanStreetName}_${searchCenter.lat}_${searchCenter.lng}_${searchRadius}`;
     
-    if (geocodeCache[cacheKey]) {
+    // If cached, return result (including null for failed lookups)
+    if (cacheKey in geocodeCache) {
         return geocodeCache[cacheKey];
     }
 
@@ -41,15 +42,15 @@ async function geocodeStreet(streetName, searchCenter, searchRadius = 0.01) {
         // Search near the given center and request geometry; limit=50 to get all segments
         const searchQuery = encodeURIComponent(`${cleanStreetName}, Netherlands`);
         const url = `https://nominatim.openstreetmap.org/search?format=json&q=${searchQuery}&limit=50&polygon_geojson=1&viewbox=${searchCenter.lng-searchRadius},${searchCenter.lat+searchRadius},${searchCenter.lng+searchRadius},${searchCenter.lat-searchRadius}&bounded=1&dedupe=0`;
-        
+
         const response = await fetch(url, {
             headers: {
                 'User-Agent': 'Ger-Scouting-JantjeBeton/1.0 (contact@example.com)'
             }
         });
-        
+
         const data = await response.json();
-        
+
         if (data && data.length > 0) {
             // Collect all geometries into a GeometryCollection
             // Filter out Point geometries (bus stops, etc.) — we only want street lines
@@ -76,16 +77,18 @@ async function geocodeStreet(streetName, searchCenter, searchRadius = 0.01) {
                 segmentCount: data.length
             };
             geocodeCache[cacheKey] = result;
-            
+
             // Be nice to Nominatim - rate limit
             await new Promise(resolve => setTimeout(resolve, 1000));
-            
+
             return result;
         }
     } catch (error) {
         console.error(`Error geocoding ${cleanStreetName}:`, error);
     }
-    
+
+    // Cache failed lookup as null to avoid retrying
+    geocodeCache[cacheKey] = null;
     return null;
 }
 

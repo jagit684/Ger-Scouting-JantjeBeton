@@ -1,0 +1,122 @@
+{
+    "regions": [
+        {
+            "id": "04",
+            "name": "04: Grobbendonck ZW (211)",
+            "color": "#992222",
+            "center": {
+                "lat": 51.525891,
+                "lng": 5.067419
+            },
+            "streets": [
+                "Schets van Grobbendoncklaan (19)",
+                "Ralph Bunchestraat (34)",
+                "Henri Dunantstraat (31)",
+                "Tobias Asserstraat (56)",
+                "Tweepad (20)",
+                "Pater Pirestraat (51)"
+            ]
+        },
+        {
+            "id": "05",
+            "name": "05: Caddenbosch (251)",
+            "color": "#800080",
+            "center": {
+                "lat": 51.523,
+                "lng": 5.0768
+            },
+            "streets": [
+                "Caddenbosch (20)",
+                "Bogtpad (7)",
+                "Melkweg (78)",
+                "Hoeffweg (8)",
+                "Kerkakkers (19)",
+                "Maasbogt (14)",
+                "Peter Benensonstraat (18)",
+                "Aabeekstraat (64)",
+                "Van Haestrechtstraat (23)","..(oneven ≥65, even ≥70)"
+
+            ]
+        },
+        {
+            "id": "08",
+            "name": "8: Molenbuurt Visscher (233)",
+            "color": "#0000FF",
+            "center": {
+                "lat": 51.520325,
+                "lng": 5.073578
+            },
+            "streets": [
+                "Molenstraat (104)",
+                "Schoolstraat (7)",
+                "Aansteede (9)",
+                "Emmastraat (55)",
+                "Korenmolenplein (28)",
+                "Groeneweg (30)", "..(1 t/m 18)"
+            ]
+        },
+        {
+            "id": "06",
+            "name": "6: Hovel (218)",
+            "color": "#aa11ff",
+            "center": {
+                "lat": 51.521183,
+                "lng": 5.069335
+            },
+            "streets": [
+                "Kalverstraat (103)",
+                "De Wieken (25)",
+                "Muldersweg (44)", 
+                "Groeneweg ","..(7 t/m 54)(46)",
+                "Hovel (0)"
+            ]
+        },
+        {
+            "id": "07",
+            "name": "7: Oranjebuurt (245)",
+            "color": "#ef00ff",
+            "center": {
+                "lat": 51.522331,
+                "lng": 5.068750
+            },
+            "streets": [
+                "Van Haestrechtstraat",
+                "..(oneven ≤ 63, even ≤66 ) (85)",
+                "Kortevoorenstraat (19)",
+                "Langevoorenstraat (18)",
+                "Oranjeplein (10)",
+                "Marijkestraat (30)",
+                "Irenestraat (24)",
+                "Beatrixstraat (25)",
+                "Margrietstraat (33)"
+            ]
+        },
+        {
+            "id": "13",
+            "name": "13: Centrum (322)",
+            "color": "#EE1111",
+            "center": {
+                "lat": 51.523061,
+                "lng": 5.065626
+            },
+            "streets": [
+                "Tilburgseweg ","..(105 tm 147a, beide zijden)(85)", 
+                ".. (va kerk tm 104) (148)", 
+                "Dorpsstraat ","..(helemaal beide zijden)(89)"
+            ]
+        },
+        {
+            "id": "47",
+            "name": "47: De Leijzoom (125)",
+            "color": "#00CED1",
+            "center": {
+                "lat": 51.526362,
+                "lng": 5.080753
+            },
+            "streets": [
+                "Abcovenseweg (92)",
+                "Leijzoom (33)"
+            ]
+        }
+    ]
+}
