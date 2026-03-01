@@ -1,57 +1,9 @@
 {
     "regions": [
         {
-            "id": "01",
-            "name": "01: Grobbendonck (183)",
-            "color": "#B8860B",
-            "center": {
-                "lat": 51.526438,
-                "lng": 5.071669
-            },
-            "streets": [
-                "Martin Luther Kinglaan (106)",
-                "Costerman Boodtstraat (77)"
-            ]
-        },
-        {
-            "id": "02",
-            "name": "02: Grobbendonck (183)",
-            "color": "#DEB887",
-            "center": {
-                "lat": 51.528622,
-                "lng": 5.072042
-            },
-            "streets": [
-                "Zevenkwartieren (20)",
-                "Robert Baeldestraat (32)",
-                "Van Limburg Stirumstraat (19)",
-                "Christoffel Bennekersstraat (12)",
-                "Willem Ruysstraat (48)",
-                "Bijlakkers (20)"
-            ]
-        },
-        {
-            "id": "03",
-            "name": "03: Grobbendonck (175)",
-            "color": "#F0E68C",
-            "center": {
-                "lat": 51.527539,
-                "lng": 5.068263
-            },
-            "streets": [
-                "Kennedylaan (88)",
-                "Zwartland (12)",
-                "Benedenven (9)",
-                "Schimmelpenninck van der Oijestraat (4)",
-                "Meerakkers (9)",
-                "Biesakkers (8)",
-                "Grobbendonckpark (45)"
-            ]
-        },
-        {
             "id": "04",
-            "name": "04: Grobbendonck (211)",
-            "color": "#DC143C",
+            "name": "04: Grobbendonck ZW (211)",
+            "color": "#992222",
             "center": {
                 "lat": 51.525891,
                 "lng": 5.067419
@@ -67,11 +19,11 @@
         },
         {
             "id": "05",
-            "name": "05: Abcoven (179)",
+            "name": "05: Caddenbosch (251)",
             "color": "#800080",
             "center": {
-                "lat": 51.526362,
-                "lng": 5.080753
+                "lat": 51.523,
+                "lng": 5.0768
             },
             "streets": [
                 "Caddenbosch (20)",
@@ -80,40 +32,59 @@
                 "Hoeffweg (8)",
                 "Kerkakkers (19)",
                 "Maasbogt (14)",
-                "Leijzoom (33)"
+                "Peter Benensonstraat (18)",
+                "Aabeekstraat (64)",
+                "Van Haestrechtstraat (23)","..(oneven ≥65, even ≥70)"
+
+            ]
+        },
+        {
+            "id": "08",
+            "name": "8: Molenbuurt Visscher (233)",
+            "color": "#0000FF",
+            "center": {
+                "lat": 51.520325,
+                "lng": 5.073578
+            },
+            "streets": [
+                "Molenstraat (104)",
+                "Schoolstraat (7)",
+                "Aansteede (9)",
+                "Emmastraat (55)",
+                "Korenmolenplein (28)",
+                "Groeneweg (1 t/m 18)(30)"
             ]
         },
         {
             "id": "06",
-            "name": "06: Abcoven (356)",
+            "name": "6: Hovel (218)",
             "color": "#aa11ff",
             "center": {
-                "lat": 51.522243,
-                "lng": 5.071901
+                "lat": 51.521183,
+                "lng": 5.069335
             },
             "streets": [
-                "Muldersweg (44)",
-                "Groeneweg (76)",
                 "Kalverstraat (103)",
                 "De Wieken (25)",
-                "Emmastraat (44)",
-                "Aabeekstraat (64)"
+                "Muldersweg (44)", 
+                "Groeneweg ","..(7 t/m 54)(46)",
+                "Hovel (0)"
             ]
         },
         {
             "id": "07",
-            "name": "07: Oranjebuurt (193)",
+            "name": "7: Oranjebuurt (245)",
             "color": "#ef00ff",
             "center": {
-                "lat": 51.524286,
-                "lng": 5.073477
+                "lat": 51.522331,
+                "lng": 5.068750
             },
             "streets": [
-                "Tilburgseweg (141)",
-                "Van Haestrechtstraat (87)",
+                "Van Haestrechtstraat",
+                "..(oneven ≤ 63, even ≤66 ) (85)",
                 "Kortevoorenstraat (19)",
                 "Langevoorenstraat (18)",
-                "Oranjeplein (100)",
+                "Oranjeplein (10)",
                 "Marijkestraat (30)",
                 "Irenestraat (24)",
                 "Beatrixstraat (25)",
@@ -121,695 +92,30 @@
             ]
         },
         {
-            "id": "08",
-            "name": "08: Abcoven (160)",
-            "color": "#0000FF",
-            "center": {
-                "lat": 51.520767,
-                "lng": 5.072497
-            },
-            "streets": [
-                "Molenstraat (123)",
-                "Aansteede (9)",
-                "Korenmolenplein (28)"
-            ]
-        },
-        {
             "id": "13",
-            "name": "13: Dorpsstraat (177)",
-            "color": "#FF0000",
+            "name": "13: Centrum (322)",
+            "color": "#EE1111",
             "center": {
-                "lat": 51.525754,
-                "lng": 5.064173
+                "lat": 51.523061,
+                "lng": 5.065626
             },
             "streets": [
-                "Tilburgseweg (86)",
-                "Dorpsstraat (91)"
+                "Tilburgseweg ","..(105 tm 147a, beide zijden)(85)", 
+                ".. (va kerk tm 104) (148)", 
+                "Dorpsstraat ","..(helemaal beide zijden)(89)"
             ]
         },
         {
-            "id": "09",
-            "name": "09: Bergstraat (109)",
+            "id": "47",
+            "name": "47: De Leijzoom (125)",
             "color": "#00CED1",
             "center": {
-                "lat": 51.516589,
-                "lng": 5.063187
+                "lat": 51.526362,
+                "lng": 5.080753
             },
             "streets": [
-                "Bergstraat"
-            ]
-        },
-        {
-            "id": "10",
-            "name": "10: 't Ven (204)",
-            "color": "#1A535C",
-            "center": {
-                "lat": 51.527103,
-                "lng": 5.060513
-            },
-            "streets": [
-                "Venneweg",
-                "Papenlantstraat",
-                "Klaphekkestraat (31)",
-                "De Ripsstraat (19)",
-                "De Krommertstraat (6)",
-                "Wethouder Tra Plein (26)",
-                "Dirckslantstraat (17)",
-                "Langenboomstraat (17)",
-                "Baanakkerstraat (10)"
-            ]
-        },
-        {
-            "id": "11",
-            "name": "11: 't Ven (118)",
-            "color": "#4ECDC4",
-            "center": {
-                "lat": 51.527856,
-                "lng": 5.056407
-            },
-            "streets": [
-                "Rietven (12)",
-                "Kruisbaan (32)",
-                "Wermenbossestraat (42)",
-                "Mortelstraat (1)",
-                "Mortelpleintje(4)",
-                "Papenweg (6)",
-                "Kromakkerstraat (8)",
-                "Vennerode"
-            ]
-        },
-        {
-            "id": "12",
-            "name": "12: Burgemeesters (121)",
-            "color": "#FF6B6B",
-            "center": {
-                "lat": 51.525101,
-                "lng": 5.059042
-            },
-            "streets": [
-                "Van Malsenstraat (83)",
-                "Burgemeester van Gorpstraat (20)",
-                "Burgemeester Voskensstraat (18)"
-            ]
-        },
-        {
-            "id": "21",
-            "name": "21: Burgemeesters (171)",
-            "color": "#FFA07A",
-            "center": {
-                "lat": 51.523844,
-                "lng": 5.062452
-            },
-            "streets": [
-                "Burgemeester Philipsenstraat (61)",
-                "Van Hessen Kasselstraat (54)",
-                "Burgemeester Rensstraat (56)"
-            ]
-        },
-        {
-            "id": "14",
-            "name": "14: Wildackers (163)",
-            "color": "#FF6B6B",
-            "center": {
-                "lat": 51.520846,
-                "lng": 5.060231
-            },
-            "streets": [
-                "Hoogstraat (67)",
-                "Reitstraat (36)",
-                "Scheerdershofje (29)",
-                "Stedekestraat (31)"
-            ]
-        },
-        {
-            "id": "15",
-            "name": "15: Wildackers (143)",
-            "color": "#00CED1",
-            "center": {
-                "lat": 51.51914502547419,
-                "lng": 5.06220243006663
-            },
-            "streets": [
-                "Wethouder van Besouwstraat (40)",
-                "Wethouder van de Lisdonkstraat (18)",
-                "Eeckelbosstraat (36)",
-                "De Schietspoel (10)",
-                "Wilteindstraat (16)",
-                "Van Hogendorpplein (23)"
-            ]
-        },
-        {
-            "id": "16",
-            "name": "16: Wildackers (235)",
-            "color": "#ff00bf",
-            "center": {
-                "lat": 51.518259,
-                "lng": 5.064779
-            },
-            "streets": [
-                "Sint Jansstraat (68)",
-                "Doctor Schaepmanstraat (86)",
-                "Pater van den Elsenpad (10)",
-                "Wethouder Vekemansstraat (44)",
-                "Doctor Poelsstraat (27)"
-            ]
-        },
-        {
-            "id": "17",
-            "name": "17: Wildackers (273)",
-            "color": "#b30086",
-            "center": {
-                "lat": 51.517170,
-                "lng": 5.060138
-            },
-            "streets": [
-                "Fabriekstraat (46)",
-                "Doctor Ariënsstraat (35)",
-                "De Werft (33)",
-                "Spinnerijstraat (35)",
-                "Wildpleintje (56)",
-                "Wethouder de Brouwerstraat (37)",
-                "Hoogstraat(31)"
-            ]
-        },
-        {
-            "id": "18",
-            "name": "18: Goirle-Centrum (346)",
-            "color": "#53EAFD",
-            "center": {
-                "lat": 51.521149,
-                "lng": 5.064740
-            },
-            "streets": [
-                "Kloosterstraat (92)",
-                "Dwarsstraat (28)",
-                "Koudepad (39)",
-                "Fraterstuin (19)",
-                "Oude Kerkstraat (33)",
-                "Franciscus van Sales hof (21)",
-                "Thomas van Diessenstraat (114)"
-            ]
-        },
-        {
-            "id": "19",
-            "name": "19: Herstallen (208)",
-            "color": "#ff1a1a",
-            "center": {
-                "lat": 51.520213,
-                "lng": 5.051419
-            },
-            "streets": [
-                "Bodepad (60)",
-                "Groot Kraaivenstraat (35)",
-                "Ezelvenstraat (38)",
-                "Wittendijk (36)",
-                "Spoorbaan (39)"
-            ]
-        },
-        {
-            "id": "20",
-            "name": "20: Herstallen (128)",
-            "color": "#b30000",
-            "center": {
-                "lat": 51.518237,
-                "lng": 5.054390
-            },
-            "streets": [
-                "Tamboerstraat (5)",
-                "Voorheistraat (10)",
-                "Hesselmansstraat (26)",
-                "Aert Swaensstraat (19)",
-                "Polderstraat (26)",
-                "Klein Kraaivenstraat (32)",
-                "Gildestraat (10)"
-            ]
-        },
-        {
-            "id": "22",
-            "name": "22: Bomen (242)",
-            "color": "#87CEFA",
-            "center": {
-                "lat": 51.523804,
-                "lng": 5.052716
-            },
-            "streets": [
-                "Elzengaard (56)",
-                "Beukengaard (58)",
-                "Lindengaard (22)",
-                "Platanengaard (23)",
-                "Sint Jacobsbaan (47)",
-                "Notengaard (13)",
-                "Wilgengaard (15)",
-                "Kastanjegaard (8)"
-            ]
-        },
-        {
-            "id": "23",
-            "name": "23: Rivieren (205)",
-            "color": "#1E90FF",
-            "center": {
-                "lat": 51.524952,
-                "lng": 5.043157
-            },
-            "streets": [
-                "Acacialaan (49)",
-                "De Hilver (67)",
-                "Oude Maasje (6)",
-                "De Wouwer (8)",
-                "De Dommel (75)"
-            ]
-        },
-        {
-            "id": "24",
-            "name": "24: Bomen (206)",
-            "color": "#00FFFF",
-            "center": {
-                "lat": 51.524431,
-                "lng": 5.048480
-            },
-            "streets": [
-                "Esdoorngaard (34)",
-                "Peppelgaard (48)",
-                "Espengaard (11)",
-                "Olmengaard (7)",
-                "Hellenweg (32)",
-                "Iepengaard (39)",
-                "Hazelaarpark (25)",
-                "Lijsterbeshof (10)"
-            ]
-        },
-        {
-            "id": "25",
-            "name": "25: Rivieren (212)",
-            "color": "#FFD700",
-            "center": {
-                "lat": 51.526668,
-                "lng": 5.043503
-            },
-            "streets": [
-                "De Zoom (13)",
-                "De Aa (13)",
-                "De Run (5)",
-                "De Wetering (10)",
-                "De Tongelreep (24)",
-                "De Dieze (39)",
-                "De Donge (30)",
-                "De Dintel (20)",
-                "De Mark (58)"
-            ]
-        },
-        {
-            "id": "26",
-            "name": "26: Baronielaan e.o. (220)",
-            "color": "#FFFF00",
-            "center": {
-                "lat": 51.528837,
-                "lng": 5.047281
-            },
-            "streets": [
-                "Baronielaan (115)",
-                "Ganzeven (17)",
-                "Den Brem (88)"
-            ]
-        },
-        {
-            "id": "27",
-            "name": "27: Kruiden (170)",
-            "color": "#FAFAD2",
-            "center": {
-                "lat": 51.527836,
-                "lng": 5.048130
-            },
-            "streets": [
-                "Zonnedauw (29)",
-                "Akkerwinde (53)",
-                "Weegbree (24)",
-                "Valeriaan (32)",
-                "Steltacker (17)",
-                "De Dieze (15)"
-            ]
-        },
-        {
-            "id": "28",
-            "name": "28: Frankische Driekhoek (253)",
-            "color": "#ffc34d",
-            "center": {
-                "lat": 51.527059,
-                "lng": 5.051279
-            },
-            "streets": [
-                "Gagel(67)",
-                "Baarsven (29)",
-                "Wit Hollandven (80)",
-                "Halve Maan (17)",
-                "Frankische Driehoek (60)"
-            ]
-        },
-        {
-            "id": "29",
-            "name": "29: Vennen (181)",
-            "color": "#8B4513",
-            "center": {
-                "lat": 51.526237,
-                "lng": 5.054382
-            },
-            "streets": [
-                "Putven (27)",
-                "Bankven (67)",
-                "Haneven (47)",
-                "Holleven (4)",
-                "Donkven (36)"
-            ]
-        },
-        {
-            "id": "30",
-            "name": "30: De Groote Akkers (154)",
-            "color": "#BC8F8F",
-            "center": {
-                "lat": 51.525551,
-                "lng": 5.075747
-            },
-            "streets": [
-                "Lodewijk van Deysseldreef (49)",
-                "Hélène Swarthdreef (20)",
-                "Josephus Alberdingk Thijmlaan (33)",
-                "Jacob van Lennepdreef (9)",
-                "Nicolaas Beetsdreef (2)",
-                "Eduard Douwes Dekkerdreef (41)"
-            ]
-        },
-        {
-            "id": "31",
-            "name": "31: De Groote Akkers (162)",
-            "color": "#DAA520",
-            "center": {
-                "lat": 51.528202,
-                "lng": 5.074890
-            },
-            "streets": [
-                "Albert Schweitzerstraat (35)",
-                "Anthony Staringdreef (30)",
-                "Hendrik Tollensdreef (97)"
-            ]
-        },
-        {
-            "id": "32",
-            "name": "32: De Groote Akkers (162)",
-            "color": "#B8860B",
-            "center": {
-                "lat": 51.529195,
-                "lng": 5.079657
-            },
-            "streets": [
-                "Aagje Dekenpad (26)",
-                "Willem Bilderdijkdreef (44)",
-                "Louis Couperusdreef (83)",
-                "Carel Vosmaerdreef (9)"
-            ]
-        },
-        {
-            "id": "33",
-            "name": "33: De Groote Akkers (278)",
-            "color": "#DEB887",
-            "center": {
-                "lat": 51.527827,
-                "lng": 5.079035
-            },
-            "streets": [
-                "Aarnout Drostdreef (38)",
-                "Jan ten Katedreef (24)",
-                "Isaäc da Costadreef (47)",
-                "De Schoolmeesterpad (29)",
-                "Guido Gezellelaan (140)"
-            ]
-        },
-        {
-            "id": "35",
-            "name": "35: De Villa (120)",
-            "color": "#6495ED",
-            "center": {
-                "lat": 51.522064,
-                "lng": 5.046985
-            },
-            "streets": [
-                "Hoogeindseweg (41)",
-                "Eikenlaan (15)",
-                "Urnenveld (16)",
-                "Klotven (11)",
-                "De Beerze (6)",
-                "De Reusel (13)",
-                "Acacialaan (7)",
-                "Bodepad (11)"
-            ]
-        },
-        {
-            "id": "36",
-            "name": "36: De Nieuwe Erven (212)",
-            "color": "#00ff00",
-            "center": {
-                "lat": 51.521154,
-                "lng": 5.043067
-            },
-            "streets": [
-                "Grondster (55)",
-                "Kruipwilg (24)",
-                "Dopheide (6)",
-                "Zilverschoon (44)",
-                "Spoorbaan (23)"
-            ]
-        },
-        {
-            "id": "37",
-            "name": "37: De Nieuwe Erven (189)",
-            "color": "#00b300",
-            "center": {
-                "lat": 51.517968,
-                "lng": 5.044803
-            },
-            "streets": [
-                "Boomleeuwerik (46)",
-                "Korhoender (28)",
-                "Regenwulp (14)",
-                "Torenvalk (27)",
-                "De Schietberg (19)",
-                "Grondster (55)"
-            ]
-        },
-        {
-            "id": "38",
-            "name": "38: De Hoogte (191)",
-            "color": "#80ffff",
-            "center": {
-                "lat": 51.528933,
-                "lng": 5.083668
-            },
-            "streets": [
-                "De Volmolen (112)",
-                "Hoge Wal (55)",
-                "Heeshoek (10)",
-                "Wagenvoort (14)"
-            ]
-        },
-        {
-            "id": "39",
-            "name": "39: De Hoogte (161)",
-            "color": "#AFEEEE",
-            "center": {
-                "lat": 51.531902,
-                "lng": 5.088365
-            },
-            "streets": [
-                "Voldijkje (54)",
-                "Hoge Wal (tot nrs 65 en 110) (55)",
-                "Hoogt (52)"
-            ]
-        },
-        {
-            "id": "40",
-            "name": "40: De Boschkens-Oost (127)",
-            "color": "#8B4513",
-            "center": {
-                "lat": 51.532562,
-                "lng": 5.071066
-            },
-            "streets": [
-                "Spieker (17)",
-                "Waterput (28)",
-                "Bronstijd (4)",
-                "IJzertijd (8)",
-                "Romeinse Tijd (8)",
-                "Middeleeuwen (36)",
-                "Slijpsteen (3)",
-                "Kooksteen (3)",
-                "Vuursteen (3)",
-                "Maalsteen (20)",
-                "Zandsteen (3)"
-            ]
-        },
-        {
-            "id": "41",
-            "name": "41: Boschkamer (249)",
-            "color": "#4ECDC4",
-            "center": {
-                "lat": 51.536599,
-                "lng": 5.058883
-            },
-            "streets": [
-                "De Boschkamer (23)",
-                "Dagpauwoog (12)",
-                "Zandhagedis (11)",
-                "Boschring (104)",
-                "Muurhagedis (32)",
-                "Oeverzwaluw  (32)",
-                "Kamsalamander (35)"
-            ]
-        },
-        {
-            "id": "42",
-            "name": "42: Surfplas (253)",
-            "color": "#1A535C",
-            "center": {
-                "lat": 51.530526,
-                "lng": 5.054190
-            },
-            "streets": [
-                "Roerdomp (26)",
-                "Boschring (104)",
-                "Vuurvlinder (17)",
-                "Boschrand (39)",
-                "IJsvogel (6)",
-                "Oeverzwaluw (15)",
-                "Watersalamander (24)"
-            ]
-        },
-        {
-            "id": "43",
-            "name": "43: Kerkhofbuurt (169)",
-            "color": "#F4A460",
-            "center": {
-                "lat": 51.519174,
-                "lng": 5.069903
-            },
-            "streets": [
-                "Kerkstraat (134)",
-                "Saelde (20)",
-                "Hoogen Dries (15)"
-            ]
-        },
-        {
-            "id": "44",
-            "name": "44: TextielFabriek Besouw (139)",
-            "color": "#D2691E",
-            "center": {
-                "lat": 51.519507,
-                "lng": 5.073808
-            },
-            "streets": [
-                "Kokos",
-                "Keper",
-                "Jute",
-                "Velours",
-                "Holtap",
-                "Tapijt",
-                "Damast"
-            ]
-        },
-        {
-            "id": "45",
-            "name": "45: Land van Anna (128)",
-            "color": "#D2691E",
-            "center": {
-                "lat": 51.515526,
-                "lng": 5.063792
-            },
-            "streets": [
-                "Hendrik van Puijenbroeklaan",
-                "HAVEPplein",
-                "Annaplein",
-                "Hogebeemd",
-                "Watermolenstraat",
-                "Leybeemd",
-                "Gemijnt",
-                "Wachtelberg",
-                "De Vloed"
-            ]
-        },
-        {
-            "id": "46",
-            "name": "46: Mill Hill (91)",
-            "color": "#D2691E",
-            "center": {
-                "lat": 51.529654,
-                "lng": 5.057567
-            },
-            "streets": [
-                "Buizerd (18)",
-                "Koolmees (15)",
-                "Hertenwei (17)",
-                "Oude Baan (9)",
-                "RillaerseBaan (32)"
-            ]
-        },
-        {
-            "id": "51",
-            "name": "51: Herstallen (75)",
-            "color": "#99ff99",
-            "center": {
-                "lat": 51.523117,
-                "lng": 5.057074
-            },
-            "streets": [
-                "Nieuwe Rielseweg (48)",
-                "Kuileven (9)",
-                "Den Ouden Heertgang (7)",
-                "Vlieshoekstraat (4)",
-                "Bosstraat (7)"
-            ]
-        },
-        {
-            "id": "52",
-            "name": "52: Pastoren (109)",
-            "color": "#00ff00",
-            "center": {
-                "lat": 51.522027,
-                "lng": 5.056271
-            },
-            "streets": [
-                "Herstallenstraat (19)",
-                "Pastoor Petershofje (14)",
-                "Pastoor van Rielstraat (25)",
-                "Pastoor van Dunstraat (25)",
-                "Pastoor de Beeckstraat (26)"
-            ]
-        },
-        {
-            "id": "53",
-            "name": "53: Pastoren (80)",
-            "color": "#00b300",
-            "center": {
-                "lat": 51.520342,
-                "lng": 5.055734
-            },
-            "streets": [
-                "Van Hoogendorpplein (50)",
-                "Pastoor Sprangersstraat (28)",
-                "Doelenstraat (24)"
-            ]
-        },
-        {
-            "id": "54",
-            "name": "54: Pastoren (124)",
-            "color": "#446600",
-            "center": {
-                "lat": 51.521502,
-                "lng": 5.054192
-            },
-            "streets": [
-                "Wittendijk (24)",
-                "Kapelaan Denissenstraat (25)",
-                "Sint Jorisstraat (26)",
-                "Pastoor de Vochtstraat (25)",
-                "Pastoor Minorettistraat (24)"
+                "Abcovenseweg (92)",
+                "Leijzoom (33)"
             ]
         }
     ]

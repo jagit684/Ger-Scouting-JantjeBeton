@@ -16,7 +16,10 @@ function initMap() {
         maxZoom: 20
     }).addTo(map);
 
-
+    // Ensure zoom-in happens after map is fully loaded
+    map.once('load', function() {
+        map.zoomIn();
+    });
 
     // Load regions data
     loadRegionsData();
@@ -39,7 +42,11 @@ async function geocodeStreet(streetName, searchCenter, searchRadius = 0.01) {
         const searchQuery = encodeURIComponent(`${cleanStreetName}, Netherlands`);
         const url = `https://nominatim.openstreetmap.org/search?format=json&q=${searchQuery}&limit=50&polygon_geojson=1&viewbox=${searchCenter.lng-searchRadius},${searchCenter.lat+searchRadius},${searchCenter.lng+searchRadius},${searchCenter.lat-searchRadius}&bounded=1&dedupe=0`;
         
-        const response = await fetch(url);
+        const response = await fetch(url, {
+            headers: {
+                'User-Agent': 'Ger-Scouting-JantjeBeton/1.0 (contact@example.com)'
+            }
+        });
         
         const data = await response.json();
         
@@ -202,6 +209,10 @@ function initializeMarkers() {
     if (markers.length > 0) {
         const group = L.featureGroup(markers);
         map.fitBounds(group.getBounds().pad(0.2));
+        // Set zoom one step closer than fitBounds, but only after fitBounds is done
+        map.once('moveend', function() {
+            map.setZoom(map.getZoom() + 1);
+        });
     }
 }
 
