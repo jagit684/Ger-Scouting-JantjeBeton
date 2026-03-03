@@ -86,24 +86,7 @@
                 "..(oneven ≥65, even ≥70)"
             ]
         },
-        {
-            "id": "08",
-            "name": "08: Molenbuurt Visscher (233)",
-            "color": "#0000FF",
-            "center": {
-                "lat": 51.520325,
-                "lng": 5.073578
-            },
-            "streets": [
-                "Molenstraat (104)",
-                "Schoolstraat (7)",
-                "Aansteede (9)",
-                "Emmastraat (55)",
-                "Korenmolenplein (28)",
-                "Groeneweg (30)",
-                "..(1 t/m 18)"
-            ]
-        },
+       
         {
             "id": "06",
             "name": "06: Hovel (218)",
@@ -141,22 +124,25 @@
                 "Margrietstraat (33)"
             ]
         },
-        {
-            "id": "13",
-            "name": "13: Centrum (322)",
-            "color": "#EE1111",
+         {
+            "id": "08",
+            "name": "08: Molenbuurt Visscher (233)",
+            "color": "#0000FF",
             "center": {
-                "lat": 51.523061,
-                "lng": 5.065626
+                "lat": 51.520325,
+                "lng": 5.073578
             },
             "streets": [
-                "Tilburgseweg ",
-                "..(105 tm 147a, beide zijden)(85)",
-                ".. (va kerk tm 104) (148)",
-                "Dorpsstraat ",
-                "..(helemaal beide zijden)(89)"
+                "Molenstraat (104)",
+                "Schoolstraat (7)",
+                "Aansteede (9)",
+                "Emmastraat (55)",
+                "Korenmolenplein (28)",
+                "Groeneweg (30)",
+                "..(1 t/m 18)"
             ]
         },
+        
         {
             "id": "09",
             "name": "09: Bergstraat (109)",
@@ -220,6 +206,21 @@
                 "Van Malsenstraat (83)",
                 "Burgemeester van Gorpstraat (20)",
                 "Burgemeester Voskensstraat (18)"
+            ]
+        },{
+            "id": "13",
+            "name": "13: Centrum (322)",
+            "color": "#EE1111",
+            "center": {
+                "lat": 51.523061,
+                "lng": 5.065626
+            },
+            "streets": [
+                "Tilburgseweg ",
+                "..(105 tm 147a, beide zijden)(85)",
+                ".. (va kerk tm 104) (148)",
+                "Dorpsstraat ",
+                "..(helemaal beide zijden)(89)"
             ]
         },
         {
