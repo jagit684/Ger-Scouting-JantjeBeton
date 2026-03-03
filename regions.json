@@ -51,7 +51,7 @@
         {
             "id": "04",
             "name": "04: Grobbendonck ZW (211)",
-            "color": "#AA2222",
+            "color": "#992222",
             "center": {
                 "lat": 51.525891,
                 "lng": 5.067419
@@ -82,10 +82,11 @@
                 "Maasbogt (14)",
                 "Peter Benensonstraat (18)",
                 "Aabeekstraat (64)",
-                "Van Haestrechtstraat (23)"
+                "Van Haestrechtstraat (23)",
+                "..(oneven ≥65, even ≥70)"
             ]
         },
-         {
+        {
             "id": "08",
             "name": "08: Molenbuurt Visscher (233)",
             "color": "#0000FF",
@@ -99,22 +100,24 @@
                 "Aansteede (9)",
                 "Emmastraat (55)",
                 "Korenmolenplein (28)",
-                "Groeneweg (30)"
+                "Groeneweg (30)",
+                "..(1 t/m 18)"
             ]
         },
         {
             "id": "06",
-            "name": "06: Hovel (238)",
+            "name": "06: Hovel (218)",
             "color": "#aa11ff",
             "center": {
                 "lat": 51.521183,
                 "lng": 5.069335
             },
             "streets": [
-                "Groeneweg (46)",
                 "Kalverstraat (103)",
                 "De Wieken (25)",
                 "Muldersweg (44)",
+                "Groeneweg ",
+                "..(7 t/m 54)(46)",
                 "Hovel (0)"
             ]
         },
@@ -127,7 +130,8 @@
                 "lng": 5.068750
             },
             "streets": [
-                "Van Haestrechtstraat (85)",
+                "Van Haestrechtstraat",
+                "..(oneven ≤ 63, even ≤66 ) (85)",
                 "Kortevoorenstraat (19)",
                 "Langevoorenstraat (18)",
                 "Oranjeplein (10)",
@@ -137,7 +141,6 @@
                 "Margrietstraat (33)"
             ]
         },
-       
         {
             "id": "13",
             "name": "13: Centrum (322)",
@@ -147,8 +150,11 @@
                 "lng": 5.065626
             },
             "streets": [
-                "Tilburgseweg (233)",
-                "Dorpsstraat (89)"
+                "Tilburgseweg ",
+                "..(105 tm 147a, beide zijden)(85)",
+                ".. (va kerk tm 104) (148)",
+                "Dorpsstraat ",
+                "..(helemaal beide zijden)(89)"
             ]
         },
         {
@@ -556,7 +562,7 @@
                 "lng": 5.080753
             },
             "streets": [
-                "Abcovenseweg ()",
+                "Abcovenseweg (92)",
                 "Leijzoom (33)"
             ]
         },
